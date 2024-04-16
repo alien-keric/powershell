@@ -22,3 +22,11 @@ This issue can be referenced from a craft machine from hack the box
 - now lets see how we can abuse this into getting a shell as an adminstrator, first we will need the following credential object based parameter
 
 # Create credential object based on parameters
+
+we need to create an object based paramater that will carry our credentials 
+
+```
+PS C:\Users\svc_minecraft\server\plugins> $SecPass = ConvertTo-SecureString 's67u84zKq8IXw' -AsPlainText -Force  
+
+we can try to make a secure password conversion 
+```
