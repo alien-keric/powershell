@@ -1,5 +1,5 @@
 # powershell
-simple modified powershell can be used to gain access from one user to another using but it needs what is know as password
+- simple modified powershell can be used to gain access from one user to another using but it needs what is know as password
 
 assume we have managed to get a shell and we have meet something like this maybe 
 ```
